@@ -1,19 +1,26 @@
-# graalvmpyr
-Playing GraalVM with R and Python
+# Playing GraalVM with R and Python
 
+## Get into the container and play from shell
 Main binaries when entering the container:
 - java / javac (Java 8)
 - graalpython (python 3.7)
 - R (R 3.6)
 
-Enter VM
 ```
 docker run -it --rm -w /code -v $(pwd)/code:/code graalvmpyr:latest bash
 ```
 
-Run the HelloWorld
+## Java examples
+Define a basic alias to launch commands `alias gr='docker run -it --rm -w /code -v $(pwd)/code:/code graalvmpyr:latest sh -c'`
+
+Run the Java HelloWorld
 ```
-alias gr='docker run -it --rm -w /code -v $(pwd)/code:/code graalvmpyr:latest sh -c'
-gr "javac *.java"
-gr "java HelloWorld"
+CLASSNAME=HelloWorld
+gr "javac $CLASSNAME.java && java $CLASSNAME"
+```
+
+Run the Polyglot example
+```
+CLASSNAME=Polyglot
+gr "javac $CLASSNAME.java && java $CLASSNAME"
 ```
