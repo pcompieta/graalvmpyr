@@ -1,9 +1,9 @@
 import org.graalvm.polyglot.*;
 
-class Polyglot {
+class PolyglotArray {
     public static void main(String[] args) {
         javaJS();
-        // javaR(); -- not working as of now
+        javaR();
         javaPy();
     }
 
@@ -25,7 +25,7 @@ class Polyglot {
         Context context = Context.newBuilder().allowIO(true).build();
         Value array = context.eval("python", "[1,2,42,4]");
         int result = array.getArrayElement(2).asInt();
-        System.out.println(result);
+        System.out.println("Java executing Python: " + result);
     }
 
 }
