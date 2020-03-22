@@ -1,6 +1,6 @@
 # Playing GraalVM with R and Python
 
-More examples at: https://github.com/graalvm/graalvm-demos
+More examples at https://github.com/graalvm/graalvm-demos and https://github.com/chrisseaton/graalvm-ten-things 
 
 ## Get into the container and play from shell
 Main binaries when entering the container:
