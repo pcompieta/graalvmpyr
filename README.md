@@ -1,5 +1,7 @@
 # Playing GraalVM with R and Python
 
+More examples at: https://github.com/graalvm/graalvm-demos
+
 ## Get into the container and play from shell
 Main binaries when entering the container:
 - java / javac (Java 8)
