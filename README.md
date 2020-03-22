@@ -15,12 +15,10 @@ Define a basic alias to launch commands `alias gr='docker run -it --rm -w /code 
 
 Run the Java HelloWorld
 ```
-CLASSNAME=HelloWorld
-gr "javac $CLASSNAME.java && java $CLASSNAME"
+CLASSNAME=HelloWorld; gr "javac $CLASSNAME.java && java $CLASSNAME"
 ```
 
 Run the Polyglot example
 ```
-CLASSNAME=Polyglot
-gr "javac $CLASSNAME.java && java $CLASSNAME"
+CLASSNAME=PolyglotArray; gr "javac $CLASSNAME.java && java $CLASSNAME"
 ```
