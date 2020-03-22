@@ -5,4 +5,3 @@ RUN gu install R
 RUN gu install python
 
 VOLUME [ "code" ]
-ENTRYPOINT [ "bash" ]
