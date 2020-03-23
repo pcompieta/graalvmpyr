@@ -5,7 +5,7 @@ import org.graalvm.polyglot.*;
 /**
  * See https://www.graalvm.org/docs/reference-manual/embed/
  */
-class App {
+class VariableBinding {
     public static void main(String[] args) {
         javaR();
         javaPy();
