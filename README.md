@@ -24,3 +24,8 @@ Run the Polyglot example
 ```
 CLASSNAME=PolyglotArray; gr "javac $CLASSNAME.java && java $CLASSNAME"
 ```
+
+## Logistic regression example
+```
+gr "javac com/pcompieta/graalvm/App.java"; gr "java com.pcompieta.graalvm.App"
+```
