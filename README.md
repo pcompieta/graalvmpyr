@@ -9,11 +9,11 @@ Main binaries when entering the container:
 - R (R 3.6)
 
 ```
-docker run -it --rm -w /code -v $(pwd)/code:/code graalvmpyr:latest bash
+docker run -it --rm -w /code -v $(pwd)/simple-code:/code graalvmpyr:latest bash
 ```
 
-## Java examples
-Define a basic alias to launch commands `alias gr='docker run -it --rm -w /code -v $(pwd)/code:/code graalvmpyr:latest sh -c'`
+## Simple code examples
+Define a basic alias to launch commands `alias gr='docker run -it --rm -w /code -v $(pwd)/simple-code:/code graalvmpyr:latest sh -c'`
 
 Run the Java HelloWorld
 ```
